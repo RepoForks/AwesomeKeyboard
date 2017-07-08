@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="iconWidth">40dp</dimen>
+    <dimen name="iconHeight">50dp</dimen>
+    <dimen name="listenerEditTextMaxHeight">100dp</dimen>
+    <dimen name="listenerEditTextMinHeight">50dp</dimen>
+    <dimen name="listenerEditTextTextSize">15sp</dimen>
+    <dimen name="imgSendPadding">11dp</dimen>
+    <dimen name="iconKeyboardHeight">35dp</dimen>
+    <dimen name="iconPadding">6dp</dimen>
+    <dimen name="tvLogoTextSize">30sp</dimen>
+</resources>

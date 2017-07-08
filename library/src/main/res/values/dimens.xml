@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="itemStickerMargin">10dp</dimen>
+    <dimen name="itemEmojiconsPadding">8dp</dimen>
+    <dimen name="itemPhotoPadding">1dp</dimen>
+    <dimen name="itemStickerPadding">10dp</dimen>
+    <dimen name="cornersRadiusBgSend">6dp</dimen>
+    <dimen name="strokeWidthBgSend">1dp</dimen>
+    <dimen name="imgShopPadding">9dp</dimen>
+    <dimen name="title">40dp</dimen>
+    <dimen name="itemTitlePadding">6dp</dimen>
+</resources>

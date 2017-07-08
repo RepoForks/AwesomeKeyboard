@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">AwesomeKeyboard</string>
+    <string name="enter">Message #tag</string>
+    <string name="welcome">WELCOME TO</string>
+    <string name="not_READ_EXTERNAL_STORAGE">Bạn chưa cấp quyền đọc ảnh</string>
+</resources>

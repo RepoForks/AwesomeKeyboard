@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hoanganhtuan95ptit.awesomekeyboard.view.SquaredFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/title"
+    android:layout_height="@dimen/title">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/image_picture"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</com.hoanganhtuan95ptit.awesomekeyboard.view.SquaredFrameLayout>
