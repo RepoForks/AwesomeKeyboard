@@ -109,20 +109,20 @@ emojicons, emojicons gif ( like Skype), sticker, photo and color keyboard
 * Hide keyboard
 
 ```java
-keyboard.hideAllKeyboard();
+          keyboard.hideAllKeyboard();
 ```
 * update Data Emoticon
 
 ```java
-keyboardLayout.updateDataEmoticon(emoticonCategories.get(i));
+          keyboardLayout.updateDataEmoticon(emoticonCategories.get(i));
 ```
-*update Data Sticker
+* update Data Sticker
 
 ```java
-keyboardLayout.updateDataSticker(stickerCategories.get(i));
+          keyboardLayout.updateDataSticker(stickerCategories.get(i));
 ```
 * update Data Color
 
 ```java
-  keyboardLayout.updateDataColor("#1ecef3");
+          keyboardLayout.updateDataColor("#1ecef3");
 ```
