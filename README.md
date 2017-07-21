@@ -17,7 +17,6 @@ emojicons, emojicons gif ( like Skype), sticker, photo and color keyboard
  
  ![alt text](https://firebasestorage.googleapis.com/v0/b/hoanganhtuan-1070.appspot.com/o/ezgif.com-video-to-gif.gif?alt=media&token=a8fcfe81-219f-4542-80d8-85f59df35424)
 
-`old `
 
 | Emojicons | Sticker | Photo	| Color	| Nomal | emojicons gif |
 | -------- | -------- | -------- | -------- | -------- | -------- |
@@ -69,7 +68,7 @@ emojicons, emojicons gif ( like Skype), sticker, photo and color keyboard
 ```java
      EmojiconTextView.setText("infor");
 ```
-* EmojiconTextView:
+* EmojiconEditText:
 
 ```java
        <com.hoanganhtuan95ptit.awesomekeyboard.core.view.EmojiconEditText
@@ -183,6 +182,14 @@ emojicons, emojicons gif ( like Skype), sticker, photo and color keyboard
             }
         }
 ```
+
+### V. Thank
+
+| Developer | Project |
+| -------- | -------- |
+|  [Waynejo](https://github.com/waynejo)  | [Android-ndk-gif](https://github.com/waynejo/android-ndk-gif)   | 
+|  [Ogaclejapan](https://github.com/ogaclejapan)  | [SmartTabLayout](https://github.com/ogaclejapan/SmartTabLayout)   | 
+| [Wasabeef](https://github.com/wasabeef)   |  [Blurry](https://github.com/wasabeef/Blurry)  | 
 
 ## License
 
