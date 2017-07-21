@@ -25,6 +25,9 @@ emojicons, emojicons gif ( like Skype), sticker, photo and color keyboard
 
 
 ### II. Setting
+
+##### You need to import module #Core and module #Layout
+
 ### III. Doc
 
 #### 1.Add
@@ -132,6 +135,53 @@ emojicons, emojicons gif ( like Skype), sticker, photo and color keyboard
 
 ```java
           keyboardLayout.updateDataColor("#1ecef3");
+```
+
+### IV. Custom UI
+
+##### You just need to import module #Core
+
+#### 1. extends `KeyboardLayout` [Tutorial](https://github.com/hoanganhtuan95ptit/AwesomeKeyboard/blob/master/layout/src/main/java/com/hoanganhtuan95ptit/awesomekeyboard/layout/AwesomeKeyboardLayout.java) 
+
+```java
+         public abstract class KeyboardLayout extends RelativeLayout {
+
+             private static final String TAG = "KeyboardLayout";
+
+             public KeyboardLayout(Context context) {
+                 super(context);
+             }
+
+             public KeyboardLayout(Context context, AttributeSet attrs) {
+                 super(context, attrs);
+             }
+
+             public KeyboardLayout(Context context, AttributeSet attrs, int defStyleAttr) {
+                 super(context, attrs, defStyleAttr);
+             }
+
+             public void showKeyboard(int type){
+                 // TODO: 7/21/2017 do something 
+             }
+         }
+```
+#### 2. init data for `EmojiconConstant.emoticons` [Tutorial](https://github.com/hoanganhtuan95ptit/AwesomeKeyboard/blob/master/layout/src/main/java/com/hoanganhtuan95ptit/awesomekeyboard/layout/AwesomeKeyboardSdk.java) 
+
+```java
+        //tutorial
+        public class AwesomeKeyboardSdk {
+
+            private AwesomeKeyboardSdk(Context context, HashMap<String, String> emoticons) {
+                EmojiconConstant.emoticons = emoticons;
+                Fresco.initialize(context);
+            }
+
+            private static AwesomeKeyboardSdk awesomeKeyboard;
+
+            public static void initialize(Context context, HashMap<String, String> emoticons) {
+                if (awesomeKeyboard == null) awesomeKeyboard = new AwesomeKeyboardSdk(context, emoticons);
+            }
+        }
 ```
 
 ## License
