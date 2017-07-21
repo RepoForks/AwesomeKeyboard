@@ -4,11 +4,21 @@ emojicons, emojicons gif ( like Skype), sticker, photo and color keyboard
 
 ### I. Demo
 
+
+`apk demo`
+
+ https://github.com/hoanganhtuan95ptit/AwesomeKeyboard/blob/master/output/app-debug.apk
+
 `new emojicons gif ( like Skype) `
 
-| Emojicons |
-| -------- |
-| ![alt text](output/Screenshot_2017-07-21-15-48-25.png)|
+ ![alt text](output/Screenshot_2017-07-21-15-48-25.png)
+ 
+ ` video demo`
+ ![Sample Video](output/2017_07_21_08_28_10.mp4)
+ 
+ ` gif demo `
+ 
+ ![alt text](https://firebasestorage.googleapis.com/v0/b/hoanganhtuan-1070.appspot.com/o/ezgif.com-video-to-gif.gif?alt=media&token=a8fcfe81-219f-4542-80d8-85f59df35424)
 
 `old `
 
