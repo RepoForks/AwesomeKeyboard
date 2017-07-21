@@ -1,78 +1,128 @@
 # AwesomeKeyboard
-emoticons, sticker, photo and color keyboard
+
+emojicons, emojicons gif ( like Skype), sticker, photo and color keyboard
 
 ### I. Demo
 
+`new emojicons gif ( like Skype) `
+
+| Emojicons |
+| -------- |
+| ![alt text](output/Screenshot_2017-07-21-15-48-25.png)|
+
+`old `
+
 | Emojicons | Sticker | Photo	| Color	| Nomal |
 | -------- | -------- | -------- | -------- | -------- |
-| ![alt text](output/Screenshot_2017-07-06-12-54-22.png)   | ![alt text](output/Screenshot_2017-07-06-12-54-26.png)  | ![alt text](output/Screenshot_2017-07-06-12-55-11.png)   | ![alt text](output/Screenshot_2017-07-06-12-55-15.png)   | ![alt text](output/Screenshot_2017-07-06-12-55-21.png)   |
+| ![alt text](output/Screenshot_2017-07-21-16-18-50.png)   | ![alt text](output/Screenshot_2017-07-21-16-19-01.png)  | ![alt text](output/Screenshot_2017-07-21-16-19-18.png)   | ![alt text](output/Screenshot_2017-07-21-16-19-28.png)   | ![alt text](output/Screenshot_2017-07-21-16-19-41.png)   |
 
 
 ### II. Setting
 ### III. Doc
 
-* Add
+#### 1.Add
+
+* Application:
+
 ```java
- keyboard = KeyboardBuilder.with(this)
-                .setKeyboardLayout(keyboardLayout)
-                .setEditText(editMessage)
-                .setRoot(activtyMain)
-                .setOnItemColorClickListener(this)
-                .setOnItemPhotoClickListener(this)
-                .setOnItemStickerClickListener(this)
-                .setOnKeyDownListener(this)
-                .setOnShopClickListener(this)
-                .builder();
+     public class App extends Application {
+
+         @Override
+         public void onCreate() {
+             super.onCreate();
+             AwesomeKeyboardSdk.initialize(this, Utils.emoticons);
+         }
+     }
 ```
+
+* Use:
+
+```java
+     private void initKeyboard() {
+            keyboard = KeyboardBuilder.with(this)
+                    .setRoot(reRoot)
+                    .setKeyboardLayout(keyboardLayout)
+                    .setOnKeyDownListener(this)
+                    .addEditText(editMessage)
+                    .builder();
+     }
+```
+* EmojiconTextView:
+
+```java
+      <com.hoanganhtuan95ptit.awesomekeyboard.core.view.EmojiconTextView
+         android:id="@+id/tv"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content" />
+```
+`set text`
+```java
+     EmojiconTextView.setText("infor");
+```
+* EmojiconTextView:
+
+```java
+       <com.hoanganhtuan95ptit.awesomekeyboard.core.view.EmojiconEditText
+            android:id="@+id/edit_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:hint="Message"
+            android:maxHeight="100dp"
+            android:minHeight="50dp"
+            android:padding="8dp" />
+```
+`set text`
+```java
+      @Override
+     public void onItemEmoticonClicked(String key) {
+         int start = editMessage.getSelectionStart();
+         int end = editMessage.getSelectionEnd();
+         editMessage.getEditableText().replace(start, end, key);
+     }
+```
+
+
+
 * Show keyboard
 
 `1. show sticker `
 
 ```java
-keyboard.showKeyboard(KeyboardType.STICKER);
+        keyboard.showKeyboard(AwesomeKeyboardType.STICKER.getValue());
 ```
 `2. show photo `
 
 ```java
-keyboard.showKeyboard(KeyboardType.PHOTO);
+       keyboard.showKeyboard(AwesomeKeyboardType.PHOTO.getValue());
 ```
 `3. show color `
 
 ```java
-keyboard.showKeyboard(KeyboardType.COLOR);
+        keyboard.showKeyboard(AwesomeKeyboardType.COLOR.getValue());
 ```
 `4. show nomal `
 
 ```java
-keyboard.showKeyboard(KeyboardType.NOMAL);
+         keyboard.showKeyboard(AwesomeKeyboardType.NOMAL.getValue());
 ```
 * Hide keyboard
 
 ```java
 keyboard.hideAllKeyboard();
 ```
-* Add sticker
+* update Data Emoticon
 
 ```java
-KeyboardBuilder.addSticker(this,sticker);
+keyboardLayout.updateDataEmoticon(emoticonCategories.get(i));
 ```
-* Get sticker
+*update Data Sticker
 
 ```java
-KeyboardBuilder.getSticker(this);
+keyboardLayout.updateDataSticker(stickerCategories.get(i));
 ```
-* Clean sticker
+* update Data Color
 
 ```java
- KeyboardBuilder.clearSticker(this);
-```
-* Update sticker
-
-```java
-keyboard.updateSticker();
-```
-* convert from text to emojicons
-
-```java
-KeyboardBuilder.convertFromTextToEmoji(this, editMessage.getText().toString());
+  keyboardLayout.updateDataColor("#1ecef3");
 ```
