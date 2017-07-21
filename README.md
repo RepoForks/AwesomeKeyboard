@@ -9,12 +9,9 @@ emojicons, emojicons gif ( like Skype), sticker, photo and color keyboard
 
  https://github.com/hoanganhtuan95ptit/AwesomeKeyboard/blob/master/output/app-debug.apk
 
-`new emojicons gif ( like Skype) `
-
- ![alt text](output/Screenshot_2017-07-21-15-48-25.png)
- 
  ` video demo`
- ![Sample Video](output/2017_07_21_08_28_10.mp4)
+
+ https://youtu.be/uiC-cQCVTdo
  
  ` gif demo `
  
@@ -22,9 +19,9 @@ emojicons, emojicons gif ( like Skype), sticker, photo and color keyboard
 
 `old `
 
-| Emojicons | Sticker | Photo	| Color	| Nomal |
-| -------- | -------- | -------- | -------- | -------- |
-| ![alt text](output/Screenshot_2017-07-21-16-18-50.png)   | ![alt text](output/Screenshot_2017-07-21-16-19-01.png)  | ![alt text](output/Screenshot_2017-07-21-16-19-18.png)   | ![alt text](output/Screenshot_2017-07-21-16-19-28.png)   | ![alt text](output/Screenshot_2017-07-21-16-19-41.png)   |
+| Emojicons | Sticker | Photo	| Color	| Nomal | emojicons gif |
+| -------- | -------- | -------- | -------- | -------- | -------- |
+| ![alt text](output/Screenshot_2017-07-21-16-18-50.png)   | ![alt text](output/Screenshot_2017-07-21-16-19-01.png)  | ![alt text](output/Screenshot_2017-07-21-16-19-18.png)   | ![alt text](output/Screenshot_2017-07-21-16-19-28.png)   | ![alt text](output/Screenshot_2017-07-21-16-19-41.png)   | ![alt text](output/Screenshot_2017-07-21-15-48-25.png)   |
 
 
 ### II. Setting
