@@ -191,7 +191,6 @@ public class MainActivity extends BaseActivity implements OnKeyDownListener, OnI
 
     @Override
     public void onItemEmoticonClicked(String key) {
-        Log.e(TAG,"onItemEmoticonClicked");
         int start = editMessage.getSelectionStart();
         int end = editMessage.getSelectionEnd();
         editMessage.getEditableText().replace(start, end, key);
