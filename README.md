@@ -34,7 +34,7 @@ emojicons, emojicons gif ( like Skype), sticker, photo and color keyboard
         }  
         
         dependencies {
-            compile 'com.github.hoanganhtuan95ptit.AwesomeKeyboard:layout:1.0'
+            compile 'com.github.hoanganhtuan95ptit.AwesomeKeyboard:layout:1.0.1'
         }
         
 ```
@@ -159,7 +159,7 @@ emojicons, emojicons gif ( like Skype), sticker, photo and color keyboard
                 maven { url 'https://jitpack.io' }
         }  
          dependencies {
-             compile 'com.github.hoanganhtuan95ptit.AwesomeKeyboard:core:1.0'
+             compile 'com.github.hoanganhtuan95ptit.AwesomeKeyboard:core:1.0.1'
          }
 ```
 
