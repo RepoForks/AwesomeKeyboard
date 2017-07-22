@@ -14,6 +14,6 @@ public class App extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        AwesomeKeyboardSdk.initialize(this, Utils.emoticons);
+        AwesomeKeyboardSdk.initialize(this,Utils.emoticons);
     }
 }

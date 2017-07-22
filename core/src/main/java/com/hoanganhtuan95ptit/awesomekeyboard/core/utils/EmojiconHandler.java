@@ -20,16 +20,17 @@ public class EmojiconHandler {
     private static final int textSizeMax = 100;
 
     public void convertFromTextToEmoticon(Context context, EmojiconSpannableStringBuilder builder, int textSize) {
+        if(EmojiconConstant.emoticons==null)return;
         textSize = getTextSize(builder, textSize);
         convertToEmoticon(context, builder, EmojiconType.ANIMATION, textSize, 0, builder.length());
     }
 
     public void convertFromTextToEmoticon(Context context, Editable builder, int textSize, int start, int end) {
+        if(EmojiconConstant.emoticons==null)return;
         convertToEmoticon(context, builder, EmojiconType.NORMAL, textSize, start, end);
     }
 
     private void convertToEmoticon(Context context, Editable editable, EmojiconType type, int textSize, int start, int end) {
-
         start = Math.max(start, 0);
         end = Math.min(end, editable.length());
         if (start >= end) return;

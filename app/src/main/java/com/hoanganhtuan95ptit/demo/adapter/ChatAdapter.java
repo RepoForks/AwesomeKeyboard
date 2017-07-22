@@ -29,7 +29,7 @@ public class ChatAdapter extends BaseAdapter<String> {
 
     @Override
     public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
-        ((ViewHolder) holder).tvInfor.setText(getDatas().get(position));
+        ((ViewHolder) holder).tvInfor.setEmojicon(getDatas().get(position));
     }
 
     static class ViewHolder extends RecyclerView.ViewHolder {

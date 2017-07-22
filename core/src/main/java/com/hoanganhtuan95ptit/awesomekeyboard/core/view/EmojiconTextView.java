@@ -43,28 +43,22 @@ public class EmojiconTextView extends AppCompatTextView {
         textSizeDefault = Math.max((int) getTextSize(), textSizeDefault);
     }
 
-    @Override
-    public void setText(CharSequence text, BufferType type) {
-        if (text != null && text.length() > 0) {
-            stringBuilder = EmojiconCache.getStringBuilder(text.toString());
-            if(stringBuilder==null){
-                stringBuilder=new EmojiconSpannableStringBuilder(text);
-                emojiconHandler.convertFromTextToEmoticon(getContext(), stringBuilder, textSizeDefault);
-                EmojiconCache.saveStringBuilder(text.toString(),stringBuilder);
-            }
-            text = stringBuilder;
-            if(duration==0) {
-                duration = Math.max(duration, stringBuilder.getDuration());
-                if (duration > 0) {
-                    mHandler.post(new Runnable() {
-                        public void run() {
-                            postInvalidate();
-                            mHandler.postDelayed(this, duration);
-                        }
-                    });
-                }
+
+    public void setEmojicon(String text) {
+        if (text.isEmpty()) return;
+        stringBuilder = new EmojiconSpannableStringBuilder(text);
+        emojiconHandler.convertFromTextToEmoticon(getContext(), stringBuilder, textSizeDefault);
+        setText(stringBuilder);
+        if (duration == 0) {
+            duration = Math.max(duration, stringBuilder.getDuration());
+            if (duration > 0) {
+                mHandler.post(new Runnable() {
+                    public void run() {
+                        postInvalidate();
+                        mHandler.postDelayed(this, duration);
+                    }
+                });
             }
         }
-        super.setText(text, type);
     }
 }
