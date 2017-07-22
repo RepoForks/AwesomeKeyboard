@@ -25,8 +25,19 @@ emojicons, emojicons gif ( like Skype), sticker, photo and color keyboard
 
 ### II. Setting
 
-##### You need to import module #Core and module #Layout
-
+    You need to import module #Core and module #Layout
+    
+```java
+        repositories {
+                ...
+                maven { url 'https://jitpack.io' }
+        }  
+        
+        dependencies {
+            compile 'com.github.hoanganhtuan95ptit.AwesomeKeyboard:layout:1.0'
+        }
+        
+```
 ### III. Doc
 
 #### 1.Add
@@ -138,9 +149,21 @@ emojicons, emojicons gif ( like Skype), sticker, photo and color keyboard
 
 ### IV. Custom UI
 
-##### You just need to import module #Core
+#### 1. Intall
 
-#### 1. extends `KeyboardLayout` [Tutorial](https://github.com/hoanganhtuan95ptit/AwesomeKeyboard/blob/master/layout/src/main/java/com/hoanganhtuan95ptit/awesomekeyboard/layout/AwesomeKeyboardLayout.java) 
+   You just need to import module #Core
+   
+```java
+       repositories {
+                ...
+                maven { url 'https://jitpack.io' }
+        }  
+         dependencies {
+             compile 'com.github.hoanganhtuan95ptit.AwesomeKeyboard:core:1.0'
+         }
+```
+
+#### 2. Extends `KeyboardLayout` [Tutorial](https://github.com/hoanganhtuan95ptit/AwesomeKeyboard/blob/master/layout/src/main/java/com/hoanganhtuan95ptit/awesomekeyboard/layout/AwesomeKeyboardLayout.java) 
 
 ```java
          public abstract class KeyboardLayout extends RelativeLayout {
@@ -164,7 +187,7 @@ emojicons, emojicons gif ( like Skype), sticker, photo and color keyboard
              }
          }
 ```
-#### 2. init data for `EmojiconConstant.emoticons` [Tutorial](https://github.com/hoanganhtuan95ptit/AwesomeKeyboard/blob/master/layout/src/main/java/com/hoanganhtuan95ptit/awesomekeyboard/layout/AwesomeKeyboardSdk.java) 
+#### 3. Init data for `EmojiconConstant.emoticons` [Tutorial](https://github.com/hoanganhtuan95ptit/AwesomeKeyboard/blob/master/layout/src/main/java/com/hoanganhtuan95ptit/awesomekeyboard/layout/AwesomeKeyboardSdk.java) 
 
 ```java
         //tutorial
