@@ -77,7 +77,7 @@ emojicons, emojicons gif ( like Skype), sticker, photo and color keyboard
 ```
 `set text`
 ```java
-     EmojiconTextView.setText("infor");
+     EmojiconTextView.setEmojicon("infor");
 ```
 * EmojiconEditText:
 
