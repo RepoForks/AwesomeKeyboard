@@ -4,8 +4,9 @@
     android:layout_height="wrap_content"
     android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/tv_infor"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <com.hoanganhtuan95ptit.awesomekeyboard.core.view.EmojiconTextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="demo"/>
 </LinearLayout>

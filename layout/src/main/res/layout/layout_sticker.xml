@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F4F8">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/re_tab" />
+
+    <RelativeLayout
+        android:id="@+id/re_tab"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/smartTabLayoutHeight"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff">
+
+        <com.ogaclejapan.smarttablayout.SmartTabLayout
+            android:id="@+id/smartTabLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            app:stl_clickable="true"
+            app:stl_defaultTabBackground="?attr/selectableItemBackground"
+            app:stl_defaultTabTextAllCaps="true"
+            app:stl_defaultTabTextColor="#00ffffff"
+            app:stl_defaultTabTextHorizontalPadding="16dp"
+            app:stl_defaultTabTextMinWidth="0dp"
+            app:stl_defaultTabTextSize="12sp"
+            app:stl_distributeEvenly="false"
+            app:stl_dividerColor="#00ffffff"
+            app:stl_dividerThickness="0dp"
+            app:stl_drawDecorationAfterTab="false"
+            app:stl_indicatorAlwaysInCenter="false"
+            app:stl_indicatorColor="#00ffffff"
+            app:stl_indicatorCornerRadius="0dp"
+            app:stl_indicatorGravity="bottom"
+            app:stl_indicatorInFront="false"
+            app:stl_indicatorInterpolation="linear"
+            app:stl_indicatorThickness="0dp"
+            app:stl_indicatorWidth="auto"
+            app:stl_indicatorWithoutPadding="false"
+            app:stl_overlineColor="#00ffffff"
+            app:stl_overlineThickness="0dp"
+            app:stl_titleOffset="24dp"
+            app:stl_underlineColor="#00ffffff"
+            app:stl_underlineThickness="0dp" />
+
+        <ImageView
+            android:id="@+id/img_delete"
+            android:layout_width="@dimen/smartTabLayoutHeight"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:contentDescription="@string/app_name"
+            android:padding="6dp"
+            android:src="@drawable/ic_delete"
+            android:visibility="gone" />
+    </RelativeLayout>
+</RelativeLayout>
